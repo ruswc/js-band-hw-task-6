@@ -104,7 +104,23 @@ export class Event extends Component {
                         {this.props.thisStatus === "done" && (
                             <MDBMask className="flex-center" overlay="grey-strong">
                                 <MDBCardBody>
-                                    <MDBCardTitle>{this.props.title}</MDBCardTitle>
+                                    <MDBCardTitle>
+                                        {this.props.title}
+                                    </MDBCardTitle>
+
+                                    <MDBBadge pill
+                                              className="px-2 m-2 float-right pointer"
+                                              color={
+                                                  ((this.props.thisPriority === "high") && ("red")) || ((this.props.thisPriority === "middle") && ("success")) || ((this.props.thisPriority === "low") && ("primary-color"))
+                                              }
+                                              onClick={this.props.togglePriority(this.props.id)}
+                                              style={{cursor: 'pointer'}}
+                                    >
+
+                                        {"Priority: " + this.props.thisPriority}
+
+                                    </MDBBadge>
+
                                     {this.props.location && (
                                         <div className="my-3">
 

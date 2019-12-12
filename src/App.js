@@ -209,7 +209,6 @@ class App extends Component {
             return event;
         });
         this.setState({events});
-        // this._filterTodos();
     }
 
     _filterTodos() {

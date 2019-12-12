@@ -1,0 +1,29 @@
+language: node_js
+
+node_js:
+  - lts/*
+
+install: npm install
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - master
+
+script:
+#  - npm run lint
+#  - npm run test
+  - npm run build
+
+deploy:
+  provider: pages
+  cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: public
+  keep_history: true
+  on:
+    branch: master
+
