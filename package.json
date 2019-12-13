@@ -2,6 +2,7 @@
   "name": "js-band-hw-task-6",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ruswc.github.io/js-band-hw-task-6/",
   "dependencies": {
     "mdbreact": "4.23.1",
     "react": "^16.9.0",
@@ -10,10 +11,10 @@
     "react-router-dom": "^5.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "rename": "renamer --find App-clear.js --replace App.js ./src/App-clear.js && renamer --find style.css --replace index.css ./src/style.css ",
