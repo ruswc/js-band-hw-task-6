@@ -1,23 +1,28 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import {HashRouter} from "react-router-dom";
+import {Route, Switch, Redirect} from "react-router";
 
-import App from "App";
+import App from "./App";
+import Error from "./Error";
 
 class Routes extends React.Component {
-  render() {
-    return (
-      <Switch>
-        <Route exact path='/' component={App} />
-        {/*<Route exact path='/todos' component={App} />*/}
-
-        <Route
-          render={function() {
-            return <h1>Not Found</h1>;
-          }}
-        />
-      </Switch>
-    );
-  }
+    render() {
+        return (
+            <HashRouter>
+                <Switch>
+                    <Route exact path="/">
+                        <Redirect to={"/todos"}/>
+                    </Route>
+                    <Route exact path="/todos">
+                        <App/>
+                    </Route>
+                    <Route exact path={"*"}>
+                        <Error/>
+                    </Route>
+                </Switch>
+            </HashRouter>
+        );
+    }
 }
 
 export default Routes;
