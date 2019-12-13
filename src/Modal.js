@@ -64,7 +64,6 @@ export class Modal extends Component {
                                 className="browser-default custom-select"
                                 value={this.state.value}
                                 onChange={this.handleChange}
-
                             >
                                 <option value="" className="text-grey">Choose Priority</option>
                                 <option value="high">High</option>
@@ -81,8 +80,6 @@ export class Modal extends Component {
                         onClick={() => {
                             this.props.toggleModal();
                             this.props.addTodo(this.state.value);
-                            // this.props.addTodo();
-                            // console.log(this.state.value)
                         }}
                     >
                         Add

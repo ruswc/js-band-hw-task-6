@@ -109,12 +109,8 @@ class App extends Component {
             time: "",
             title: "",
             location: "",
-            description: "",
-            // priority: ""
+            description: ""
         });
-        // this._filterTodos();
-        console.log(newArray);
-        console.log(this.state);
         this.setState({events: newArray})
     };
 
@@ -136,7 +132,6 @@ class App extends Component {
     selectStatus = (value) => {
         this.setState({selectedStatus: value});
         this.searchByStatus(value);
-        // this._filterTodos();
     };
 
     searchByStatus = (selected) => {
@@ -156,7 +151,6 @@ class App extends Component {
     selectPriority = (value) => {
         this.setState({selectedPriority: value});
         this.searchByPriority(value);
-        // this._filterTodos();
     };
 
     searchByPriority = (selected) => {
@@ -186,7 +180,6 @@ class App extends Component {
             return event;
         });
         this.setState({events});
-        // this._filterTodos();
     };
 
     togglePriority = eventId => () => {
