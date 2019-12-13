@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,UACI,WAAY,CACZ,UACJ,CAEA,MACI,eAAgB,CAChB,YAAa,CACb,qBAAsB,CACtB,6BACJ","file":"main.731eacfc.chunk.css","sourcesContent":["html, body {\n    height: 100%;\n    width: 100%;\n}\n\n#root {\n    min-height: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\n"]}
