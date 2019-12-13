@@ -88,7 +88,6 @@ export class Event extends Component {
                                 <MDBBadge
                                     color="primary"
                                     className="px-2 m-2 float-right"
-                                    // onClick={() => this.props.onDelete(this.props.id)}
                                 >
                                     <MDBIcon
                                         icon="pen"
@@ -177,7 +176,6 @@ export class Event extends Component {
                                     <MDBBadge
                                         color="primary"
                                         className="px-2 m-2 float-right"
-                                        // onClick={() => this.props.onDelete(this.props.id)}
                                     >
                                         <MDBIcon
                                             icon="pen"
@@ -188,7 +186,6 @@ export class Event extends Component {
                                 </MDBCardBody>
                             </MDBMask>
                         )}
-
 
                     </MDBCard>
                 </div>
