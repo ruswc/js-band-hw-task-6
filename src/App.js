@@ -6,12 +6,12 @@ import {
     MDBRow
 } from "mdbreact";
 
-
 import {Event} from "./Event";
 import {SearchByTitle} from "./SearchByTitle";
 import {Modal} from "./Modal";
 import {SearchByStatus} from "./SearchByStatus";
 import {SearchByPriority} from "./SearchByPriority";
+
 
 class App extends Component {
     constructor(props) {
@@ -104,14 +104,14 @@ class App extends Component {
             priority: priorityTodo,
             filtered: [true, true, true]
         });
-                this.setState({events: newArray});
-                this.setState({
-                    time: "",
-                    title: "",
-                    location: "",
-                    description: "",
-                    // priority: ""
-                });
+        this.setState({events: newArray});
+        this.setState({
+            time: "",
+            title: "",
+            location: "",
+            description: "",
+            // priority: ""
+        });
         // this._filterTodos();
         console.log(newArray);
         console.log(this.state);
